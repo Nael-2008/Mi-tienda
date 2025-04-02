@@ -1,4 +1,18 @@
 /* General */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .submenu {
+        display: none; /* Podr√≠as mostrar los submen√∫s con un clic */
+    }
+
+    header {
+        font-size: 16px;
+    }
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -51,7 +65,7 @@ nav {
     font-weight: bold;
 	}
 	.submenu a {
-    text-align: center; /* Centra el texto dentro del submen˙ */
+    text-align: center; /* Centra el texto dentro del submen√∫ */
     display: block; /* Asegura que el enlace ocupe todo el ancho de su contenedor */
 }
 
@@ -81,7 +95,7 @@ nav {
 }
 
 .menu-item:hover .submenu {
-    display: block; /* Mostrar submen˙ al pasar el ratÛn */
+    display: block; /* Mostrar submen√∫ al pasar el rat√≥n */
 }
 
 
@@ -141,7 +155,7 @@ footer {
 
 .barra-lateral ul li a:hover {
     text-decoration: underline;
-    color: #ffffff; /* Cambia a blanco al pasar el ratÛn */
+    color: #ffffff; /* Cambia a blanco al pasar el rat√≥n */
 }
 
 
@@ -194,7 +208,7 @@ main section {
     margin-bottom: 20px;
 }
 
-/* Pie de p·gina */
+/* Pie de p√°gina */
 footer {
     background-color: #333;
     color: white;
