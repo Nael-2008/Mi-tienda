@@ -112,7 +112,7 @@ footer {
 
 .barra-lateral {
     background: linear-gradient(180deg, #cce5ff, #007bff); /* De azul claro a azul intenso */
-	height: calc(100vh - 100px); /* La altura total será el 100% de la ventana menos 100px *
+	
     padding: 15px;
     color: white; /* Color de texto blanco para contraste */
     border-radius: 8px; /* Bordes redondeados */
@@ -138,6 +138,8 @@ footer {
     text-decoration: underline;
     color: #ffffff; /* Cambia a blanco al pasar el ratón */
 }
+
+
 
 
 
