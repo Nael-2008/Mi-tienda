@@ -7,6 +7,114 @@
     <title>Servicios Médicos</title>
     <link rel="stylesheet" href="styles.css"> 
 </head>
+<style>
+        /* General */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px; /* Tamaño máximo para imágenes */
+            height: auto; /* Mantener proporciones */
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+        }
+
+        /* Encabezado */
+        header {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Navegación */
+        nav {
+            background: #0056b3;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap; /* Responsivo: ajustar elementos en móviles */
+        }
+
+        nav li {
+            margin: 5px 15px;
+            position: relative; /* Necesario para submenu */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav a:hover {
+            background: #003f7f;
+        }
+
+        /* Submenú */
+        .submenu {
+            display: none; /* Oculto por defecto */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #0056b3;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            z-index: 1000;
+        }
+
+        .submenu li {
+            width: 150px;
+        }
+
+        .submenu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .submenu a:hover {
+            background: #003f7f;
+        }
+
+        .menu-item:hover .submenu {
+            display: block; /* Mostrar submenú al pasar */
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .submenu {
+                position: static; /* Evita problemas en móviles */
+                width: 100%; /* Submenú ocupa todo el ancho */
+            }
+
+            .submenu a {
+                text-align: left; /* Alinear texto en móviles */
+            }
+        }
+    </style>
+
+	
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.5">
     <title>Resaltar imágenes</title>
