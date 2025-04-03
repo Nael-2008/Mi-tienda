@@ -1,36 +1,4 @@
 /* General */
-/* Estilo para pantallas grandes (escritorio) */
-.sidebar {
-    width: 300px;
-    position: fixed;
-    height: 100vh;
-    overflow-y: auto;
-}
-
-/* Estilo para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        position: relative;
-        height: auto;
-        overflow: visible;
-    }
-}
-@media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-* {
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
